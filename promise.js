@@ -10,10 +10,12 @@ const promiseOutput = async (cari) => {
     let _counter = 0;
     data_ixx.filter(hitung);
     data_gvc.filter(hitung);
-    function hitung(item){
+    
+    function hitung(item) {
       if(item.hasil == cari) ++_counter;
     }
-    console.log(_counter);
+    
+    return _counter;
 
   } catch {
     console.log(err);
